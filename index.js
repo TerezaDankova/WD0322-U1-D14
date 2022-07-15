@@ -1,5 +1,7 @@
 const numberOfCells = 76
 
+window.onload = document.querySelector("body")
+
 function displayCells() {
     let cellsContainer = document.getElementById('cells-container')
     for (let cellCount = 1 ; cellCount<=numberOfCells ; cellCount++)

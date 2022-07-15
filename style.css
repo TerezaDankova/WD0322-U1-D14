@@ -46,16 +46,22 @@ body {
 
 #bingo {
   color: azure;
-  text-align: center;
   font-size: 50px;
+  right: 20%;
   position: relative;
-  margin-left: 40%;
+  margin-left: -57px;
+  left: 42.5%;
+  top: 12%;
+  bottom: 66%;
+  margin-top: 44p;
 }
-#bingo {
-  color: azure;
-  text-align: center;
-  font-size: 30px;
-  position: absolute;
+#challenge {
+    position: absolute;
+    color:#436867;
+    left: 43%;
+    top: 16%;
+    bottom: 66%;
+    margin-top: 44p;
 }
 #button {
   text-align: center;
