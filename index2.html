@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo challenge</title>
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      width: 100%;
+    }
+    .board {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .main-board{
+      width: 1064px;
+      margin-bottom: 20px;   
+      color:  #436867;
+    }
+    .user-board {
+      width: 667px;
+      margin-bottom: 24px;
+    }
+    .cell {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1.5px;
+      border: 1px solid #badbe4;
+      border-radius: 10px;
+    }
+  
+
+    .t-center {
+      text-align: center;
+    }
+    .btn {
+      width: 15%;
+      height: 43px;
+      border-radius: 10px;
+      margin-top: 20px;
+      padding: 5px;
+      background-color: rgb(105, 151, 192);
+      border: none;
+      color: white;
+      letter-spacing: 1px;
+      
+    }
+    .input-field {
+      width: 10%;
+      height: 25px;
+      margin-top: 20px;
+      padding: 5px;
+      background-color: #badbe4;
+      color: white;
+      border-radius: 50px;
+      border: none;
+      text-align: center;
+      font-size: 20px;
+    }
+    input:focus {
+      outline: none;
+    }
+    .highlight {
+      background-color: rgb(105, 151, 192);
+    }
+    h1 {
+      color: #badbe4;
+      font-size: 100px;
+    }
+    #challenge {
+      font-size: 30px;
+      position: absolute;
+      color:#436867;
+      left: 53%;
+      top: 17.5%;
+      margin-top: 44p;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+      <h1 class="t-center">BINGO<br><span id="challenge">CHALLENGE</span></h1>
+      
+    <div class="main-board m-auto board"></div>
+
+      <input type="button" id="randBtn" class="btn" value="GENERATE RANDOM NUMBER">
+      <input type="number" id="usersNumber" class="input-field" placeholder= "Number of users" value="1">
+      <input type="button" id="userBoardBtn" class="btn" value="GENERATE USERS BOARD">
+    <h5 id="randomNum"></h5>
+  </div>
+  
+  <script src="index2.js"></script>
+</body>
+</html>
